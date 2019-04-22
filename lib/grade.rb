@@ -10,5 +10,5 @@ module Grade
     MAKEUP_POINT,
     MEETS_EXPECTATIONS,
     EXCEEDS_EXPECTATIONS
-  ]
+  ]  
 end
