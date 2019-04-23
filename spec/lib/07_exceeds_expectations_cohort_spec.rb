@@ -17,7 +17,7 @@ describe Cohort do
     cohort
   end
 
-  xdescribe "#system_check_completed?" do
+  describe "#system_check_completed?" do
     let(:sam)  { cohort_with_students.students.first }
     let(:josh) { cohort_with_students.students[1] }
     let(:toby) { cohort_with_students.students.last }
@@ -43,7 +43,7 @@ describe Cohort do
       [sam, sam, toby].each do |student|
         submission = SystemCheckSubmission.new("binding.pry", student)
         system_check.add_submission(submission)
-      end
+      end      
 
       expect(cohort.system_check_completed?(system_check)).
         to eq(false)
